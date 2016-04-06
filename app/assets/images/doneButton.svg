@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>doneButton</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SmartPhone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="confirmArticle" transform="translate(-243.000000, -1189.000000)">
+            <rect id="Rectangle-37" x="0" y="0" width="320" height="1269"></rect>
+            <g id="content" transform="translate(12.000000, 158.000000)" font-size="12" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN" font-weight="300">
+                <g id="body" transform="translate(44.000000, 586.000000)">
+                    <text id="ここからは¥2,000">
+                        <tspan x="0" y="11" fill="#F50C0C">ここからは¥2,000</tspan>
+                        <tspan x="0" y="29" fill="#F50C0C">支払った人のみ閲覧できます↓</tspan>
+                        <tspan x="168" y="29" font-size="14" fill="#000000"></tspan>
+                        <tspan x="0" y="47" font-size="14" fill="#000000">ここからは、実現方法について</tspan>
+                        <tspan x="0" y="68" font-size="14" fill="#000000">書いていきます。</tspan>
+                        <tspan x="0" y="89" font-size="14" fill="#000000">まず、店の近くを通ったら通知が</tspan>
+                        <tspan x="0" y="110" font-size="14" fill="#000000">届くようにするため、店に</tspan>
+                        <tspan x="0" y="131" font-size="14" fill="#000000">ibeaconを搭載してもらいます。</tspan>
+                        <tspan x="0" y="152" font-size="14" fill="#000000">エンドユーザは、携帯アプリを</tspan>
+                        <tspan x="0" y="173" font-size="14" fill="#000000">ダウンロードし「近くのお店か</tspan>
+                        <tspan x="0" y="194" font-size="14" fill="#000000">ら情報を受け取る機能」をONに</tspan>
+                        <tspan x="0" y="215" font-size="14" fill="#000000">したら街を歩いているだけで知</tspan>
+                        <tspan x="0" y="236" font-size="14" fill="#000000">りたい情報を受け取ることがで</tspan>
+                        <tspan x="0" y="257" font-size="14" fill="#000000">きます。では、店側は最新情報</tspan>
+                        <tspan x="0" y="278" font-size="14" fill="#000000">をどのようにして、投稿するので</tspan>
+                        <tspan x="0" y="299" font-size="14" fill="#000000">しょうか？</tspan>
+                        <tspan x="0" y="320" font-size="14" fill="#000000">店側専用に店舗管理画面を作成</tspan>
+                        <tspan x="0" y="341" font-size="14" fill="#000000">します。シンプルなものにしまし</tspan>
+                        <tspan x="0" y="362" font-size="14" fill="#000000">ょう。店舗管理画面から情報を</tspan>
+                        <tspan x="0" y="383" font-size="14" fill="#000000">登録すれば、すぐさまあなたの</tspan>
+                        <tspan x="0" y="404" font-size="14" fill="#000000">お店を気に入っているお客様へ</tspan>
+                        <tspan x="0" y="425" font-size="14" fill="#000000">と情報が流れます。…</tspan>
+                        <tspan x="0" y="446" font-size="14" fill="#000000"></tspan>
+                        <tspan x="0" y="467" font-size="14" fill="#000000"></tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="footer" transform="translate(24.000000, 1189.000000)">
+                <g id="doneButton" transform="translate(219.000000, 0.000000)">
+                    <circle id="Oval-3" fill="#78D11E" cx="26.5" cy="26.5" r="26.5"></circle>
+                    <g id="done" transform="translate(11.000000, 15.000000)" fill="#FFFFFF">
+                        <path d="M10,18.2615385 L3,11.1538462 L0.666666667,13.5230769 L10,23 L30,2.69230769 L27.6666667,0.323076923 L10,18.2615385 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

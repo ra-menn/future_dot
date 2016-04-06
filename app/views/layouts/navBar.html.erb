@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>F.</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
+		<%= stylesheet_link_tag "application", :media => "all" %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<head>
+	<body>
+		<!-- ナビゲーションバー -->
+		<header>
+			<div id="navBar">
+				<div id="logo" class="navItem"><%= link_to image_tag('logo.svg'), articles_path %></div> 
+				<div id="searchForm" class="navItem">
+					<%= image_tag 'search.svg' %>
+					<input id="searchBox" type="text" name="seach" size="20" maxlength="100" placeholder="検索">
+				</div>
+				<div id="editIcon" class="navItem"><%= link_to image_tag('pen.svg'), new_article_path %></div>
+				<div id="alertIcon" class="navItem"><%= image_tag 'bell.svg' %></div>
+				<div id="userIcon" class="navItem"><%= link_to image_tag('user.svg'), user_session_path %></div>
+			</div>
+		</header>
+		<!-- ナビゲーションバー(end) -->
+		
+		<!-- ここに本文 -->
+		<br><br><br>
+		<%= yield %>
+		
+	</body>
+</html>

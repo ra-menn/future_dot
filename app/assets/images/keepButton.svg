@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>keepButton</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SmartPhone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Article" transform="translate(-61.000000, -1170.000000)">
+            <rect id="Rectangle-37" x="-1" y="-1" width="320" height="1252"></rect>
+            <g id="content" transform="translate(12.000000, 158.000000)">
+                <g id="body" transform="translate(43.000000, 586.000000)"></g>
+            </g>
+            <g id="footer" transform="translate(61.000000, 1170.000000)">
+                <g id="keepButton">
+                    <circle id="Oval-3" fill="#F6A623" cx="26.5" cy="26.5" r="26.5"></circle>
+                    <g id="bookmark-outline" transform="translate(14.000000, 11.000000)" fill="#FFFFFF">
+                        <path d="M21.235023,0 L3.53917051,0 C1.59262673,0 0,1.6 0,3.55555556 L0,32 L12.3870968,26.6666667 L24.7741935,32 L24.7741935,3.55555556 C24.7741935,1.6 23.1815668,0 21.235023,0 L21.235023,0 Z M21.235023,26.6666667 L12.3870968,22.7555556 L3.53917051,26.6666667 L3.53917051,3.55555556 L21.235023,3.55555556 L21.235023,26.6666667 L21.235023,26.6666667 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

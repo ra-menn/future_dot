@@ -1,0 +1,179 @@
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:959px)";
+$large:  "only screen and (min-width:960px)";
+$gray:   #B8B6B6;
+
+body{
+  font: "Lucida Grande","Lucida Sans Unicode","LucidaSans",Garuda,Verdana,Tahoma,sans-serif;
+}
+
+div#navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 17px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5px;
+    box-shadow: 0 1px 2px 0 $gray;
+    div.navItem{
+      float: left;
+    }
+    div#logo {
+      img{
+        Vertical-align: middle;
+        width: 20px;
+        height: 13px;
+      }
+    }
+    div#searchForm{
+      img{
+      	Vertical-align: middle;
+        width: 17px;
+        height: 17px;
+      }
+      input{
+        Vertical-align: middle;
+       }
+    }
+    div#editIcon,div#alertIcon,div#userIcon{
+      text-align: right;
+      img{
+        Vertical-align: middle;
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+}
+
+#searchBox{
+  border: 0;
+  height: 20px;
+  width: 80%;
+  font-size: 0.8em;
+}
+
+
+
+/***********************
+    スマホのデザイン
+************************/
+@media #{$small} {
+//640px以下
+
+    div#logo {
+      width: 10%;
+    }
+    div#searchForm{
+      width: 60%;
+    }
+    div#editIcon{
+      width: 10%;
+    }
+    div#alertIcon{
+      width: 10%;
+    }
+    div#userIcon{
+      width: 10%;
+    }
+
+    div#navButtons2{
+      position: fixed;
+      bottom: 10px;
+      left: 30%;
+      width: 40%;
+      text-align: center;
+        div.navButton{
+          float: left;
+          width: (100%/2);
+        }
+    }
+    div#navButtons3{
+      position: fixed;
+      bottom: 10px;
+      left: 20%;
+      width: 60%;
+      text-align: center;
+        div.navButton{
+          float: left;
+          width: (100%/3);
+          img{
+          	width: 45px;
+        	height: 45px;
+          }
+        }
+    }
+    div#navButtons4{
+      position: fixed;
+      bottom: 10px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+        div.navButton{
+          float: left;
+          width: (100%/4);
+        }
+    }
+}
+/***********************
+  スマホのデザイン(end)
+************************/
+
+/***********************
+    タブレットのデザイン
+************************/
+@media #{$middle} {
+//641px〜959pxまで
+
+    div#logo {
+      width: 5%;
+    }
+    div#searchForm{
+      width: 80%;
+    }
+    div#editIcon{
+      width: 5%;
+    }
+    div#alertIcon{
+      width: 5%;
+    }
+    div#userIcon{
+      width: 5%;
+    }
+}
+/***********************
+ タブレットのデザイン(end)
+************************/
+
+/***********************
+      PCのデザイン
+************************/
+@media #{$large} {
+//960px以上
+
+    div#logo {
+      width: 3%;
+    }
+    div#searchForm{
+      width: 88%;
+    }
+    div#editIcon{
+      width: 3%;
+    }
+    div#alertIcon{
+      width: 3%;
+    }
+    div#userIcon{
+      width: 3%;
+    }
+
+}
+/***********************
+    PCのデザイン(end)
+************************/
+
+
+
+

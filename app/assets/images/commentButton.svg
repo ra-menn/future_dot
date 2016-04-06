@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>commentButton</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SmartPhone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Article" transform="translate(-207.000000, -1170.000000)">
+            <rect id="Rectangle-37" x="-1" y="-1" width="320" height="1252"></rect>
+            <g id="content" transform="translate(12.000000, 158.000000)">
+                <g id="body" transform="translate(43.000000, 586.000000)"></g>
+            </g>
+            <g id="footer" transform="translate(61.000000, 1170.000000)">
+                <g id="commentButton" transform="translate(146.000000, 0.000000)">
+                    <circle id="Oval-3" fill="#01D0B2" cx="26.5" cy="26.5" r="26.5"></circle>
+                    <g id="messenger" transform="translate(12.000000, 12.000000)" fill="#FFFFFF">
+                        <path d="M26.1,0 L2.9,0 C1.305,0 0,1.305 0,2.9 L0,29 L5.8,23.2 L26.1,23.2 C27.695,23.2 29,21.895 29,20.3 L29,2.9 C29,1.305 27.695,0 26.1,0 L26.1,0 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

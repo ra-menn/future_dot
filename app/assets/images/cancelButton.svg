@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>canselButton</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SmartPhone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="createArticle" transform="translate(-61.000000, -546.000000)">
+            <rect id="Rectangle-37" x="0" y="0" width="320" height="630"></rect>
+            <g id="footer" transform="translate(61.000000, 546.000000)">
+                <g id="canselButton">
+                    <circle id="Oval-3" fill="#478FE3" cx="26.5" cy="26.5" r="26.5"></circle>
+                    <g id="close" transform="translate(14.000000, 14.000000)" fill="#FFFFFF">
+                        <path d="M25,2.5 L22.5,0 L12.5,10 L2.5,0 L0,2.5 L10,12.5 L0,22.5 L2.5,25 L12.5,15 L22.5,25 L25,22.5 L15,12.5 L25,2.5 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

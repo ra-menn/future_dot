@@ -1,0 +1,10 @@
+<!-- フッター -->
+<footer>
+	<div id="navButtons2">
+		<div>
+			<div id="navButton1" class="navButton"><%= form_tag article_path(article.id), method: :DELETE do%><% image_submit_tag 'deleteButton.svg', data: { confirm: "この記事を削除します" } %><% end %></div>
+			<div id="navButton2" class="navButton"><%= link_to image_tag('editButton.svg'), edit_article_path(article.id) %></div>
+		</div>
+	</div>
+</footer>
+<!-- フッター(end) -->
