@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title F.
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    :javascript
+      function func1(){
+        document.formEdit.submit();
+      }
+  %body
+    / ナビゲーションバー
+    %header
+      #navBar
+        #logo.navItem= link_to image_tag('logo.svg'), articles_path
+        #searchForm.navItem
+          = image_tag 'search.svg'
+          %input#searchBox{:maxlength => "100", :name => "seach", :placeholder => "検索", :size => "20", :type => "text"}/
+        #editIcon.navItem= link_to image_tag('pen.svg'), new_article_path
+        #alertIcon.navItem= image_tag 'bell.svg'
+        #userIcon.navItem= link_to image_tag('user.svg'), user_session_path
+    / ナビゲーションバー(end)
+    / ここに本文
+    %br/
+    %br/
+    %br/
+    = yield

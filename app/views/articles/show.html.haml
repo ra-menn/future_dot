@@ -1,0 +1,4 @@
+%h1= @article.title
+%div
+  = simple_format(@article.content)
+= render 'myArtFooter', article: @article

@@ -12,17 +12,26 @@ class ArticlesController < ApplicationController
 
 	# 記事作成ページを表示します
 	def new
-		@article = Article.new
+		# if @article.nil?
+		  @article = Article.new
+		# else
+	 #      @article[] = [:title]
+	 #      @article[] = [:content]
+		# end
 	end
 
 	# 作成した記事をDBに登録します
 	def create
 		@article = Article.new(article_params)
-		if @article.save
-			redirect_to articles_path
-		else
-			render new_article_path
-		end
+	    respond_to do |format|
+	      if @article.save then
+	        format.html { redirect_to articles_path }
+	      else
+	        # 一度目の「確認」ボタンクリック時は、confirmingがセットされていないのsaveでエラーが発生しこっちに来る
+	        # ただし、ここに到達した時点で model の after_validation 後なので、confirmingはセットされている状態で new アクションへ
+	        format.html { render action: 'new' }
+	      end
+	    end
 	end
 
 	# 記事ページを表示します
@@ -35,10 +44,10 @@ class ArticlesController < ApplicationController
 
 	# 編集した記事をDBに登録します
 	def update
-		if @article.update(article_params)
+		if @article.update(article_params) then
 			redirect_to articles_path
 		else
-			render edit_article_path
+			render action: 'edit'
 		end
 	end
 
@@ -51,7 +60,7 @@ class ArticlesController < ApplicationController
 	private
 		# 登録する値を取り出します
 		def article_params
-			params.require(:article).permit(:title, :content)
+			params.require(:article).permit(:title, :content, :confirming)
 		end
 
 		# Articleのインスタンスを取得します

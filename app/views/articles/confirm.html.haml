@@ -1,0 +1,18 @@
+%h1 Confirm
+= form_for(@article) do |f|
+  .field
+    = f.label :title
+    \:
+    %br/
+    = f.hidden_field :title
+    = @article.title
+  %br/
+  .field
+    = f.label :content
+    \:
+    \#{f.hidden_field :content}
+    \#{simple_format(@article.content)}
+  %br/
+  .action
+    = f.submit
+  - params[:article][:id] = 17

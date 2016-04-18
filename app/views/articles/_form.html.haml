@@ -1,0 +1,31 @@
+%form
+  - if @article.confirming.blank?
+    .form-inputs
+      %p "タイトル"
+      %input{name: "title", label: 'タイトル', value: @article.title}
+      %p "本文"
+      %textarea{name: "content", label: '本文', cols: "80", rows: "10"}=p @article.content
+    .form-actions
+      = render 'createArtFooter'
+  - else
+    %table.table
+      %tr
+        %th タイトル:
+        %td= @article.title
+      %tr
+        %th 本文:
+        %td= @article.content
+
+    .form-inputs
+      %input{name: "title", type: "hidden", value: @article.title}
+      %input{name: "content", type: "hidden", value: @article.content}
+    .form-actions
+      %p この内容で記事を作成します。よろしいですか？
+      = render 'confirmArtFooter'
+
+  %input{name: "confirming", type: "hidden", value: "1"}
+
+%form{:action => @article, :method => "post", :name => "form1"}
+  %input{name: "title", type: "hidden", value: @article.title}
+  %input{name: "content", type: "hidden", value: @article.content}
+  %input{name: "confirming", type: "hidden", value: "0"}

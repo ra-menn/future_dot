@@ -1,0 +1,9 @@
+/ フッター
+%footer
+  #navButtons2
+    %div
+      #navButton1.navButton
+        = form_tag article_path(article.id), method: :DELETE do
+          = image_submit_tag 'deleteButton.svg', data: { confirm: "この記事を削除します" }
+      #navButton2.navButton= link_to image_tag('editButton.svg'), edit_article_path(article.id)
+/ フッター(end)

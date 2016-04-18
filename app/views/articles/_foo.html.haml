@@ -1,0 +1,24 @@
+= simple_form_for @article do |f|
+  - if @article.confirming.blank?
+    .form-inputs
+      = f.input :title, label: 'タイトル'
+      %p "本文"
+      = f.text_area :content, label: '本文', cols: "80", rows: "10"
+    .form-actions
+      = render 'createArtFooter'
+  - else
+    %table.table
+      %tr
+        %th タイトル:
+        %td= @article.title
+      %tr
+        %th 本文:
+        %td= @article.content
+
+    .form-inputs
+      = f.hidden_field :title
+      = f.hidden_field :content
+    .form-actions
+      %p この内容で記事を作成します。よろしいですか？
+      = render 'confirmArtFooter'
+  = f.hidden_field :confirming

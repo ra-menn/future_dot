@@ -7,12 +7,18 @@ Rails.application.routes.draw do
 
   get 'account/createAccount'
 
-  get 'top/index'
+  post 'top/index'
 
-  root 'top#index'
+  # post 'articles/confirm'
+
+  # post 'articles/:id/confirm' => 'articles#confirm'
+
+  root 'articles#index'
 
   # resources :users do
-    resources :articles
+    resources :articles do
+      resources :confirm, only: [:index, :show]
+    end
   # end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
